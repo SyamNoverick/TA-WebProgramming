@@ -8,19 +8,14 @@
   scroll-behavior: smooth;
 }
 
-header {
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-}
-
 nav {
+  z-index: 100;
   border-width: 1px;
   background-color: #161515;
   position: fixed;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .wrapper {
@@ -40,10 +35,27 @@ nav {
   padding-right: 1em;
 }
 
+.link-nav ul li {
+  display: inline;
+}
+
 .link-nav li,
 .link-nav a {
   margin-right: 2em;
-  display: inline;
   text-decoration: none;
   list-style-type: none;
+  justify-content: center;
+}
+
+.link-nav ul li div {
+  display: inline-flex;
+  background-color: white;
+  margin-right: 2em;
+  padding: 0.5em 0.7em;
+  border-radius: 12px;
+}
+
+.link-nav ul li div span {
+  color: #bc4b15;
+  padding-right: 0.7em;
 }

@@ -1,0 +1,71 @@
+#home-nav {
+  margin-top: 5em;
+  position: relative;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.typo p {
+  margin-bottom: 0.5em;
+}
+
+#typo-home {
+  font-size: 1.3em;
+}
+
+.typo-halo {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.typo-impian {
+  font-size: 4em;
+  width: 9em;
+  font-weight: 900;
+}
+
+.typo-cari {
+  font-size: 0.75em;
+  width: 23em;
+}
+
+.home-button button {
+  margin-right: 1em;
+  padding: 1.2em 3em;
+  background-color: #aa6d16;
+  border-radius: 15px;
+  border-width: 0;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate((-20.46deg));
+}
+
+.image1-wrapper {
+  position: relative;
+  top: -10%;
+  right: 0%;
+  z-index: 10;
+}
+
+.image1-wrapper {
+  position: absolute;
+  z-index: 10;
+}
+
+.image1-wrapper div {
+  border-radius: 50%;
+  width: 671px;
+  height: 671px;
+  position: absolute;
+  background-color: white;
+  z-index: -1;
+  top: 0;
+  right: -10%;
+}
