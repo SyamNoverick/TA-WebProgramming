@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@400;600;700&display=swap");
+
+main {
+  height: 100vh;
+  background: linear-gradient(
+    135.32deg,
+    rgba(184, 132, 30, 0.61) 0%,
+    rgba(187, 52, 9, 0.96) 75.14%
+  );
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 10em;
+  padding-left: 1.5em;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.typo p {
+  margin-bottom: 0.5em;
+}
+
+#typo-home {
+  font-size: 1.3em;
+}
+
+.typo-halo {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.typo-impian {
+  font-size: 4em;
+  width: 9em;
+  font-weight: 900;
+}
+
+.typo-cari {
+  font-size: 0.75em;
+  width: 23em;
+}
+
+.home-button button {
+  margin-right: 1em;
+  padding: 1.2em 3em;
+  background-color: #aa6d16;
+  border-radius: 15px;
+  border-width: 0;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate((-20.46deg));
+}
