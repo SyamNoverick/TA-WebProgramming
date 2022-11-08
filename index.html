@@ -9,9 +9,17 @@
         <link rel="stylesheet" href="./style/header.css">
         <link rel="stylesheet" href="./style/main.css">
         <link rel="stylesheet" href="./style/home-section.css">
+        <link rel="stylesheet" href="./style/collection-section.css">
     </head>
 
+    <!-- Pengertian tag div ditujukan untuk memudahkan aplikasi bergaya dengan css dan memperlakukan secara khusus yang nantinya dapat di class, id, title, dan sebagainya
+        funsgi tag div pada html digunakan untuk mengelompokan element atau bermacam-macam tag agar menjadi satu grup
+            referensi 
+            https://kumparan.com/how-to-tekno/fungsi-div-pada-html-dan-contoh-penggunaannya
+        -->
+
     <body>
+
         <header>
             <nav>
                 <div class="wrapper">
@@ -21,16 +29,16 @@
                     <div class="link-nav">
                         <ul>
                             <li><a href="#home-nav">Home</a></li>
-                            <li><a href="">Collection</a></li>
+                            <li><a href="#collection-nav">Collection</a></li>
                             <li><a href="">Type</a></li>
                             <li><a href="">About</a></li>
                             <li>
-                                <div>
-                                    <span>
+                                <span>
+                                    <button>
                                         Cart
-                                    </span>
-                                    <img src="./asset/Group.svg" alt="Cart-image">
-                                </div>
+                                        <img src="./asset/Group.svg" alt="Cart-image">
+                                    </button>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -56,11 +64,136 @@
                 </div>
                 <div class="image1-wrapper">
                     <div></div>
-                    <img src="./asset/image1.png" alt="Shoes-image-1" loading="lazy">
+                    <img src="./asset/image1.png" alt="Shoes-image-1" loading="eager">
                 </div>
             </section>
-        </main>
 
+            <section id="collection-nav" class="collection">
+                <div>
+                    <p>Collection</p>
+                </div>
+                <p>This is our collection The Greatest from the greatest shoes</p>
+                <div class="slide-container">
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="./asset/sepatu-slider1.png" alt="slider-sepatu">
+                        </div>
+                        <div class="card">
+                            <div class="brand-name">
+                                <p>Nike</p>
+                                <p>$1.0K</p>
+                            </div>
+                            <div class="size">
+                                <p>size</p>
+                            </div>
+                            <div class="size-number-wrapper">
+                                <div class="size-number">
+                                    <p>41</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>42</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>43</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="./asset/sepatu-slider2.png" alt="slider-sepatu" class="image2">
+                        </div>
+                        <div class="card">
+                            <div class="brand-name">
+                                <p>Nike</p>
+                                <p>$1.0K</p>
+                            </div>
+                            <div class="size">
+                                <p>size</p>
+                            </div>
+                            <div class="size-number-wrapper">
+                                <div class="size-number">
+                                    <p>41</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>42</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>43</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="./asset/sepatu-slider3.png" alt="slider-sepatu" class="image3">
+                        </div>
+                        <div class="card">
+                            <div class="brand-name">
+                                <p>Nike</p>
+                                <p>$1.0K</p>
+                            </div>
+                            <div class="size">
+                                <p>size</p>
+                            </div>
+                            <div class="size-number-wrapper">
+                                <div class="size-number">
+                                    <p>41</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>42</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>43</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <img src="./asset/sepatu-slider4.png" alt="slider-sepatu" class="image4">
+                        </div>
+                        <div class="card">
+                            <div class="brand-name">
+                                <p>Nike</p>
+                                <p>$1.0K</p>
+                            </div>
+                            <div class="size">
+                                <p>size</p>
+                            </div>
+                            <div class="size-number-wrapper">
+                                <div class="size-number">
+                                    <p>41</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>42</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>43</p>
+                                </div>
+                                <div class="size-number">
+                                    <p>44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="type-shoes" class="type">
+
+            </section>
+
+        </main>
     </body>
 
 </html>

@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+header {
+  position: absolute;
+  top: 0;
+}
+
 nav {
   z-index: 100;
   border-width: 1px;
@@ -47,15 +52,30 @@ nav {
   justify-content: center;
 }
 
-.link-nav ul li div {
-  display: inline-flex;
+.link-nav ul li a:hover {
+  text-decoration: underline;
+  transition: 1ms;
+  color: #bc4b15;
+}
+
+.link-nav ul li span {
   background-color: white;
   margin-right: 2em;
   padding: 0.5em 0.7em;
   border-radius: 12px;
 }
 
-.link-nav ul li div span {
-  color: #bc4b15;
-  padding-right: 0.7em;
+.link-nav ul li span button {
+  background-color: white;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #161515;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.link-nav ul li span button img {
+  margin-left: 5px;
 }

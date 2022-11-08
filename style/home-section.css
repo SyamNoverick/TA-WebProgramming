@@ -1,11 +1,22 @@
 #home-nav {
-  margin-top: 5em;
+  background: linear-gradient(
+    135.32deg,
+    rgba(184, 132, 30, 0.61) 0%,
+    rgba(187, 52, 9, 0.96) 75.14%
+  );
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 4.5em;
+  margin-top: 3.4em;
   position: relative;
 }
 
 .home {
   display: flex;
   flex-direction: column;
+}
+
+.typo {
+  width: 37.625em;
 }
 
 .typo p {
@@ -34,7 +45,7 @@
 
 .home-button button {
   margin-right: 1em;
-  padding: 1.2em 3em;
+  padding: 1.2em;
   background-color: #aa6d16;
   border-radius: 15px;
   border-width: 0;
@@ -66,6 +77,6 @@
   position: absolute;
   background-color: white;
   z-index: -1;
-  top: 0;
+  top: 5%;
   right: -20%;
 }
