@@ -1,0 +1,107 @@
+#type-nav {
+  background: linear-gradient(
+    127.64deg,
+    rgba(187, 52, 9, 0.83) 17%,
+    rgba(184, 132, 30, 0.91) 68.58%
+  );
+  padding-right: 3em;
+  padding-bottom: 3em;
+  padding-left: 3em;
+}
+
+.container-gender {
+  padding-top: 3em;
+}
+
+.gender {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 48px;
+  line-height: 72px;
+  text-shadow: 0px 4px 4px rgba(26, 24, 15, 0.25);
+  box-sizing: border-box;
+  background: linear-gradient(
+    127.64deg,
+    rgba(0, 0, 0, 0.0875) 17%,
+    rgba(0, 0, 0, 0.35) 68.58%
+  );
+  mix-blend-mode: normal;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 10px 5px 5px rgba(0, 0, 0, 0.33),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.type-container {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  padding: 1em;
+  background: linear-gradient(
+    127.64deg,
+    rgba(255, 255, 255, 0.85) 17%,
+    rgba(255, 255, 255, 0.85) 68.58%
+  );
+  mix-blend-mode: normal;
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 10px 5px 5px rgba(0, 0, 0, 0.33),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.type-shoes-image {
+  filter: drop-shadow(15px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.shoes-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-shoes-container {
+  display: grid;
+  grid-template-columns: 310px 200px;
+  grid-template-rows: 200px 40px;
+  align-items: center;
+}
+
+.type-shoes-container p {
+  font-weight: 500;
+  color: #000000;
+}
+
+.type-size-container {
+  column-gap: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.type-size-container > div {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.type-color {
+  display: flex;
+  column-gap: 5px;
+  justify-content: end;
+  margin-right: 50px;
+}
+
+.type-color > div {
+  width: 28px;
+  height: 26px;
+}

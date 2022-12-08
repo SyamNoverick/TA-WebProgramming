@@ -1,0 +1,66 @@
+.c .card .image-box {
+  height: 200px;
+  background: #fff;
+}
+
+.card .image-box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.card {
+  display: inline-block;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  max-width: 95%;
+  width: 100%;
+  margin-top: 2em;
+  padding: 30px 0;
+}
+
+.profile-detail * {
+  color: black;
+}
+
+.brand {
+  margin: 0.7em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-wrapper {
+  height: 50px;
+  display: flex;
+  column-gap: 5px;
+}
+.profile-detail p {
+  font-size: 12px;
+  margin: 0.5em 2.6em;
+}
+
+.profile-detail div .size {
+  font-size: 8px;
+  margin-top: 1em;
+  background-color: black;
+  color: white;
+}
+
+.size-one {
+  margin-left: 3.5em;
+}
+
+.size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
