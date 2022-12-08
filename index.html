@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="./style/main.css">
         <link rel="stylesheet" href="./style/home-section.css">
         <link rel="stylesheet" href="./style/collection-section.css">
+        <link rel="stylesheet" href="./style/slider.css">
+        <link rel="stylesheet" href="./style/swiper.css">
+        <link rel="stylesheet" href="./style/type.css">
+        <link rel="stylesheet" href="./style/type-color-shoes.css">
+        <link rel="stylesheet" href="./style/casual-section.css">
+        <link rel="stylesheet" href="./style/about.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     </head>
 
     <!-- Pengertian tag div ditujukan untuk memudahkan aplikasi bergaya dengan css dan memperlakukan secara khusus yang nantinya dapat di class, id, title, dan sebagainya
@@ -30,11 +37,11 @@
                         <ul>
                             <li><a href="#home-nav">Home</a></li>
                             <li><a href="#collection-nav">Collection</a></li>
-                            <li><a href="">Type</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="#type-nav">Type</a></li>
+                            <li><a href="#about">About</a></li>
                             <li>
                                 <span>
-                                    <button>
+                                    <button class="cartButton">
                                         Cart
                                         <img src="./asset/Group.svg" alt="Cart-image">
                                     </button>
@@ -58,13 +65,15 @@
                             karna sepatu melengkapi penampilan anda</p>
                     </div>
                     <div class="home-button">
-                        <button>find out</button>
-                        <button>Login</button>
+                        <button class="find-out" onclick="changeColor()">find out</button>
+                        <button class="login-button" onclick="changeColor2()">Login</button>
                     </div>
+                    <div class="button-append"></div>
                 </div>
                 <div class="image1-wrapper">
                     <div></div>
-                    <img src="./asset/image1.png" alt="Shoes-image-1" loading="eager">
+                    <img src="./asset/jordan-delta-3-mid-shoes-WwnTQl-removebg-preview 1.png" alt="Shoes-image-1"
+                        loading="eager">
                 </div>
             </section>
 
@@ -73,127 +82,422 @@
                     <p>Collection</p>
                 </div>
                 <p>This is our collection The Greatest from the greatest shoes</p>
-                <div class="slide-container">
-                    <div class="card-wrapper">
-                        <div class="image-wrapper">
-                            <img src="./asset/sepatu-slider1.png" alt="slider-sepatu">
-                        </div>
-                        <div class="card">
-                            <div class="brand-name">
-                                <p>Nike</p>
-                                <p>$1.0K</p>
+                <div class="container">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
+                                </div>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="size">
-                                <p>size</p>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
+                                </div>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="size-number-wrapper">
-                                <div class="size-number">
-                                    <p>41</p>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
                                 </div>
-                                <div class="size-number">
-                                    <p>42</p>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="size-number">
-                                    <p>43</p>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
                                 </div>
-                                <div class="size-number">
-                                    <p>44</p>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
+                                </div>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./asset/sepatu-slider1.png" alt="">
+                                </div>
+                                <div class="profile-detail">
+                                    <div class="brand">
+                                        <span>Nike</span>
+                                        <span>$1.0K</span>
+                                    </div>
+                                    <p>Size</p>
+                                    <div class="size-wrapper">
+                                        <div class="size-one size">
+                                            41
+                                        </div>
+                                        <div class="size">
+                                            42
+                                        </div>
+                                        <div class="size">
+                                            43
+                                        </div>
+                                        <div class="size">
+                                            44
+                                        </div>
+                                        <div class="size">
+                                            45
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-wrapper">
-                        <div class="image-wrapper">
-                            <img src="./asset/sepatu-slider2.png" alt="slider-sepatu" class="image2">
-                        </div>
-                        <div class="card">
-                            <div class="brand-name">
-                                <p>Nike</p>
-                                <p>$1.0K</p>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section id="type-nav">
+                <div class="container-gender">
+                    <div class="gender">
+                        <p>Man</p>
+                        <p>Women</p>
+                    </div>
+                </div>
+                <div class="type-container">
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/air-force-1-low-men1.png" alt="air-force-1" class="type-shoes-image">
                             </div>
-                            <div class="size">
-                                <p>size</p>
+                            <div class="shoes-description">
+                                <p>Nike Air Force 1 Low Retro
+                                    Men's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
+                                </div>
                             </div>
-                            <div class="size-number-wrapper">
-                                <div class="size-number">
-                                    <p>41</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>42</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>43</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>44</p>
-                                </div>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.499 K</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card-wrapper">
-                        <div class="image-wrapper">
-                            <img src="./asset/sepatu-slider3.png" alt="slider-sepatu" class="image3">
-                        </div>
-                        <div class="card">
-                            <div class="brand-name">
-                                <p>Nike</p>
-                                <p>$1.0K</p>
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/court-legacy-lift-shoes-1zLxsK-women1.png" alt="air-force-1"
+                                    class="type-shoes-image">
                             </div>
-                            <div class="size">
-                                <p>size</p>
+                            <div class="shoes-description">
+                                <p>Nike Court Legacy Lift
+                                    Women's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
+                                </div>
                             </div>
-                            <div class="size-number-wrapper">
-                                <div class="size-number">
-                                    <p>41</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>42</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>43</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>44</p>
-                                </div>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.249 K</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card-wrapper">
-                        <div class="image-wrapper">
-                            <img src="./asset/sepatu-slider4.png" alt="slider-sepatu" class="image4">
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/jumpman-two-trey-shoes-men2.png" alt="air-force-1"
+                                    class="type-shoes-image">
+                            </div>
+                            <div class="shoes-description">
+                                <p>Jumpman Two Trey
+                                    Men's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
+                                </div>
+                            </div>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.249 K</p>
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="brand-name">
-                                <p>Nike</p>
-                                <p>$1.0K</p>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/custom-nike-metcon-8-women2.png" alt="air-force-1"
+                                    class="type-shoes-image">
                             </div>
-                            <div class="size">
-                                <p>size</p>
+                            <div class="shoes-description">
+                                <p>Nike Metcon 8 By You
+                                    Women's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
+                                </div>
                             </div>
-                            <div class="size-number-wrapper">
-                                <div class="size-number">
-                                    <p>41</p>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.249 K</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/jordan-delta-3-mid-shoes-men3.png" alt="air-force-1"
+                                    class="type-shoes-image">
+                            </div>
+                            <div class="shoes-description">
+                                <p>Jordan Delta 3 Mid
+                                    Men's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
                                 </div>
-                                <div class="size-number">
-                                    <p>42</p>
+                            </div>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.249 K</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-shoes-container">
+                            <div class="shoes-image">
+                                <img src="./asset/court-vision-alta-shoes-p7Dnlp-women3.png" alt="air-force-1"
+                                    class="type-shoes-image">
+                            </div>
+                            <div class="shoes-description">
+                                <p>Nike Court Vision Alta
+                                    Women's Shoes
+                                </p>
+                                <p>Size</p>
+                                <div class="type-size-container">
+                                    <div>41</div>
+                                    <div>42</div>
+                                    <div>43</div>
+                                    <div>44</div>
                                 </div>
-                                <div class="size-number">
-                                    <p>43</p>
-                                </div>
-                                <div class="size-number">
-                                    <p>44</p>
-                                </div>
+                            </div>
+                            <div class="type-color">
+                                <div class="type-color-shoes-white"></div>
+                                <div class="type-color-shoes-blue"></div>
+                                <div class="type-color-shoes-black"></div>
+                            </div>
+                            <div class="type-price">
+                                <p>$1.249 K</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="type-shoes" class="type">
-
+            <section id="casual-section">
+                <div class="container-casual">
+                    <p class="casual-typo">Casual</p>
+                    <p>This type of shoe is designed for casual activities,
+                        so it doesn't have any special design or technology.
+                        Usually, these shoes are used to carry out daily activities.
+                    </p>
+                </div>
+                <div class="container-black">
+                    <img src="./asset/nike-removebg-preview 3.png" alt="">
+                    <img src="./asset/nike 1.png" alt="Nike" class="image-foot-nike">
+                </div>
+                <div class="container-sneakers">
+                    <p class="sneakers-typo">SNEAKERS</p>
+                    <p class="sneakers-description">Because they are quiet when used for walks, these shoes with rubber
+                        soles are then called
+                        sneakers.
+                        Taken from the English word, sneak which means, now shoes that have rubber soles are widely
+                        known as sneakers.</p>
+                </div>
             </section>
 
+            <section id="about">
+                <div class="about-flex">
+                    <div class="about-description">
+                        <img src="./asset/nike-removebg-preview 3.png" alt="Nike">
+                        <p>NIKE IS A SHOES, CLOTHING AND SHOES COMPANY
+                        </p>
+                        <p>UNITED STATES SPORTS EQUIPMENT WHICH IS ONE OF THE BIGGEST IN THE WORLD.
+                        </p>
+                        <p>Established: jan 25, 1964 EUGENE,OREGON , AMERIKA</p>
+                        <p>CEO :John Donahoe</p>
+                        <p>Headquarter : Beaverton, Oregon, Amerika Serikat</p>
+                        <p>PRODUK : Sepatu Atlet & Pakaian</p>
+                    </div>
+                </div>
+                <div class="link-about">
+                    <div class="image-about-container">
+                        <img src="./asset/174855-removebg-preview 1.png" alt="">
+                        <p>POWER SHOES</p>
+                    </div>
+                    <div>
+                        <a href="https://www.nike.com/id/w/mens-shoes-nik1zy7ok">
+                            <p>Referensi -> https://www.nike.com/id/w/mens-shoes-nik1zy7ok</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
+
+    <script src="./src/alert.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/swiper.js"></script>
 
 </html>
